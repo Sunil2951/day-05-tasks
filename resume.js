@@ -1,0 +1,40 @@
+var resume = {
+    "name":"Sunil Joshi",
+    "age":"23",
+    "DOB":"29/05/2001",
+    "father_name":"Ramadass",
+    "mother_name": "Rajalakshmi",
+    "educational":{
+        "qualification":{
+        "ug":"Bsc computer science",
+        "pg":"Msc computer science(discountinued)",
+        },
+        "college":"Arignar Anna Government Arts & Science College Karaikal",
+        "university":"Pondicherry University"
+    },
+    "address":"c-18 anna nagar akkaraivattam karaikal",
+    "phone_number":"6369939527",
+    "email_id":"suniljoshi2951@gmail.com"
+}
+function json2array(json){
+    var result = [];
+    var keys = Object.keys(json);
+    keys.forEach(function(key){
+        result.push(json[key]);
+    });
+    return result;
+}
+var arr=json2array(resume);
+for(var i=0;i<arr.length;i++){
+ console.log(arr[i]);
+}
+var arr1=[];
+for(var i in arr){
+  arr1.push(arr[i]);
+}
+console.log(arr1);
+var arr2=[];
+for(var i of arr){
+  arr2.push(resume.name);
+}
+console.log(arr2);

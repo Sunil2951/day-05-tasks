@@ -1,0 +1,67 @@
+Document: 
+ 
+It represents the document loaded inside the window or browser.
+
+The properties related to it are stored in the document object.	
+
+It is loaded after the loading window because the window contains a document.	
+
+It is the root element of the document object model.
+
+It is an object of window.	
+
+We can not access windows objects properties inside the document.	
+
+logically:
+
+document:{ properties}
+
+Example: document.title will return the title of the document
+
+
+Window:
+
+It represents the browser window in which you are seeing the content.
+
+The properties related to it are stored in the window object.
+
+It is loaded before the document because window container document.
+
+The window is the global element for all objects, functions, etc.
+
+It is an object of the browser.
+
+We can access document object properties inside the window.
+
+logically:
+
+    window:{
+        document:{properties}
+    }
+
+example: window.document.title will return the title of the document.
+
+
+Screen:
+
+The JavaScript screen object holds information of browser screen.
+
+It can be used to display screen width, height, colorDepth, pixelDepth etc.
+
+The navigator object is the window property, so it can be accessed by: window.screen (or)  screen 
+
+Property of JavaScript Screen Object:
+
+There are many properties of screen object that returns information of the browser.
+
+1. width	returns the width of the screen
+
+2. height	returns the height of the screen
+
+3. availWidth	returns the available width
+
+4. availHeight	returns the available height
+
+5. colorDepth	returns the color depth
+
+6. pixelDepth   returns the pixel depth
